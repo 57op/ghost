@@ -10,5 +10,13 @@
   {
     "repository": "android_kernel_motorola_ghost",
     "target_path": "kernel/motorola/ghost"
+  },
+ {
+    "repository": "android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat"
+  },
+  {
+    "repository": "android_external_stlport",
+    "target_path": "external/stlport"
   }
 ]
