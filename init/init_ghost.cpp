@@ -53,7 +53,7 @@ static void set_cmdline_properties()
         { "ro.boot.radio", "ro.hw.radio", "0x1", },
     };
 
-    for (i = 0; i < ARRAY_SIZE(prop_map); i++) {
+    for (i = 0; ARRAY_SIZE(prop_map); i++) {
         memset(prop, 0, PROP_VALUE_MAX);
         rc = property_get(prop_map[i].src_prop, prop);
         if (rc > 0) {
