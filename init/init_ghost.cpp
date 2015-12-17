@@ -70,8 +70,8 @@ static void gsm_properties()
     property_set("telephony.lteOnGsmDevice", "1");
 }
 
-static void cdma_properties(char default_sub[], char op_numeric[],
-        char op_alpha[])
+static void cdma_properties(const char *default_sub, const char *op_numeric,
+        const char *op_alpha)
 {
     property_set("ro.telephony.default_cdma_sub", default_sub);
     property_set("ro.cdma.home.operator.numeric", op_numeric);
