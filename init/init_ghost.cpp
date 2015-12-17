@@ -135,6 +135,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver,
         property_set("ro.com.google.clientidbase.ms", "android-verizon");
         property_set("ro.com.google.clientidbase.am", "android-verizon");
         property_set("ro.com.google.clientidbase.yt", "android-verizon");
+        cdma_properties("0", "311480", "Verizon");
     } else if (ISMATCH(radio, "0x3")) {
         /* xt1052 */
         property_set("ro.product.device", "ghost");
@@ -150,6 +151,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver,
         property_set("ro.build.description", "ghost_sprint-user 4.4 13.11.3Q2.X-69-3-8 12 release-keys");
         property_set("ro.build.fingerprint", "motorola/ghost_sprint/ghost:4.4/13.11.3Q2.X-69-3-8/12:user/release-keys");
         property_set("ro.build.product", "ghost_sprint");
+        cdma_properties("1", "310120", "Sprint");
     } else if (ISMATCH(radio, "0x5")) {
         /* xt1055 */
         property_set("ro.product.device", "ghost_usc");
@@ -157,6 +159,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver,
         property_set("ro.build.description", "ghost_usc-user 4.4 13.11.3Q2.X-69-3-2 11 release-keys");
         property_set("ro.build.fingerprint", "motorola/ghost_usc/ghost:4.4/13.11.3Q2.X-69-3-2/11:user/release-keys");
         property_set("ro.build.product", "ghost_usc");
+        cdma_properties("0", "311580", "U.S.Cellular");
     } else if (ISMATCH(radio, "0x6")) {
         /* xt1053 */
         property_set("ro.product.device", "ghost_retail");
